@@ -6,10 +6,11 @@ import Blogs from "./Pages/Blogs/Blogs";
 import Login from "./Pages/Login/Login/Login";
 import Register from "./Pages/Login/Register/Register";
 import NotFound from "./Pages/Shared/NotFound/NotFound";
+import AuthProvider from "./contexts/AuthProvider";
 
 function App() {
     return (
-        <div>
+        <AuthProvider>
             <Router>
                 <Routes>
                     <Route path="/" element={<Home />} />
@@ -20,7 +21,7 @@ function App() {
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </Router>
-        </div>
+        </AuthProvider>
     );
 }
 
