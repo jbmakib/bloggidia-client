@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
     const [addBg, setAddBg] = useState(false);
@@ -18,9 +19,9 @@ const Header = () => {
             }`}
         >
             <div className="container-fluid">
-                <a className="navbar-brand" href="/">
-                    Navbar
-                </a>
+                <Link className="navbar-brand" to="/">
+                    Bloggidea
+                </Link>
                 <button
                     className="navbar-toggler"
                     type="button"
@@ -37,19 +38,46 @@ const Header = () => {
                     id="navbarNavAltMarkup"
                 >
                     <div className="navbar-nav ms-auto">
-                        <a
-                            className="nav-link active"
-                            aria-current="page"
-                            href="/"
+                        <NavLink
+                            className={({ isActive }) =>
+                                isActive
+                                    ? "nav-link active text-primary"
+                                    : "nav-link"
+                            }
+                            to="/"
                         >
                             Home
-                        </a>
-                        <a className="nav-link" href="/">
-                            Features
-                        </a>
-                        <a className="nav-link" href="/">
-                            Pricing
-                        </a>
+                        </NavLink>
+                        <NavLink
+                            className={({ isActive }) =>
+                                isActive
+                                    ? "nav-link active text-primary"
+                                    : "nav-link"
+                            }
+                            to="/blogs"
+                        >
+                            Blogs
+                        </NavLink>
+                        <NavLink
+                            className={({ isActive }) =>
+                                isActive
+                                    ? "nav-link active text-primary"
+                                    : "nav-link"
+                            }
+                            to="/about"
+                        >
+                            About
+                        </NavLink>
+                        <NavLink
+                            className={({ isActive }) =>
+                                isActive
+                                    ? "nav-link active text-primary"
+                                    : "nav-link"
+                            }
+                            to="/login"
+                        >
+                            Login
+                        </NavLink>
                     </div>
                 </div>
             </div>
