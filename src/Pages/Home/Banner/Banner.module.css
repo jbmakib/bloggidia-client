@@ -1,2 +1,10 @@
 .banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #3bedb7),
+        url("../../../assets/media/images/banner-bg-desktop.png");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

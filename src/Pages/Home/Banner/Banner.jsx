@@ -4,7 +4,9 @@ import styles from "./Banner.module.css";
 const Banner = () => {
     return (
         <div className={styles.banner}>
-            <h2>This is banner inside home</h2>
+            <div className="text-white text-center container">
+                <h1 className="fs-biggest">Write everything, what you think</h1>
+            </div>
         </div>
     );
 };

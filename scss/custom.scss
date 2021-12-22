@@ -3,4 +3,36 @@ $theme-colors: (
     "danger": white,
 );
 
+$position-values: (
+    0: 0,
+    25: 25%,
+    50: 50%,
+    75: 75%,
+    100: 100%,
+);
+
+// font sizes base
+$font-size-root: null;
+$font-size-base: 1rem; // Assumes the browser default, typically `16px`
+$font-size-sm: $font-size-base * 0.875;
+$font-size-lg: $font-size-base * 1.25;
+
+// font sizes
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+
+$font-sizes: (
+    biggest: 50px,
+    1: $h1-font-size,
+    2: $h2-font-size,
+    3: $h3-font-size,
+    4: $h4-font-size,
+    5: $h5-font-size,
+    6: $h6-font-size,
+);
+
 @import "../node_modules/bootstrap/scss/bootstrap";
