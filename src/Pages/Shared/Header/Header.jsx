@@ -37,7 +37,7 @@ const Header = () => {
                     className="collapse navbar-collapse"
                     id="navbarNavAltMarkup"
                 >
-                    <div className="navbar-nav ms-auto">
+                    <div className="navbar-nav ms-auto align-items-center">
                         <NavLink
                             className={({ isActive }) =>
                                 isActive
@@ -76,7 +76,7 @@ const Header = () => {
                             }
                             to="/login"
                         >
-                            Login
+                            <button className="btn btn-primary">Login</button>
                         </NavLink>
                     </div>
                 </div>
