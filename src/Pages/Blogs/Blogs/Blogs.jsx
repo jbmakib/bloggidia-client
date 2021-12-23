@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../Shared/Header/Header";
+import Header from "../../Shared/Header/Header";
 
 const Blogs = () => {
     window.document.title = "Bloggidea - Blogs";

@@ -1,8 +1,8 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home/Home/Home";
-import About from "./Pages/About/About";
-import Blogs from "./Pages/Blogs/Blogs";
+import About from "./Pages/About/About/About";
+import Blogs from "./Pages/Blogs/Blogs/Blogs";
 import Login from "./Pages/Login/Login/Login";
 import Register from "./Pages/Login/Register/Register";
 import NotFound from "./Pages/Shared/NotFound/NotFound";
