@@ -76,7 +76,9 @@ const Header = () => {
                             }
                             to="/login"
                         >
-                            <button className="btn btn-primary">Login</button>
+                            <button className="btn btn-primary rounded-pill">
+                                Login
+                            </button>
                         </NavLink>
                     </div>
                 </div>
